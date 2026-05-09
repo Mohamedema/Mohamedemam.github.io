@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohamed Emam Mansour</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; color: #222; }
+
+    header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: white; text-align: center; padding: 60px 20px 40px;
+    }
+    header h1 { font-size: 2.6em; letter-spacing: 2px; }
+    header p { margin-top: 8px; font-size: 1.05em; opacity: 0.85; }
+    .contact-bar {
+      margin-top: 18px; display: flex; justify-content: center;
+      flex-wrap: wrap; gap: 16px;
+    }
+    .contact-bar a {
+      color: #a8d8ea; text-decoration: none; font-size: 0.95em;
+    }
+    .contact-bar a:hover { text-decoration: underline; }
+
+    nav {
+      background: #16213e; display: flex; justify-content: center;
+      flex-wrap: wrap; gap: 4px; padding: 10px;
+      position: sticky; top: 0; z-index: 100;
+    }
+    nav a {
+      color: #ccc; text-decoration: none; padding: 6px 14px;
+      border-radius: 20px; font-size: 0.9em; transition: background 0.2s;
+    }
+    nav a:hover { background: #6c63ff; color: white; }
+
+    main { max-width: 900px; margin: 40px auto; padding: 0 20px 60px; }
+
+    section { margin-bottom: 50px; }
+    section h2 {
+      font-size: 1.4em; color: #6c63ff; border-bottom: 2px solid #6c63ff;
+      padding-bottom: 6px; margin-bottom: 20px; text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .card {
+      background: white; border-radius: 10px; padding: 20px 24px;
+      margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border-left: 4px solid #6c63ff;
+    }
+    .card-header { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px; }
+    .card-header strong { font-size: 1.05em; }
+    .card-header span { color: #888; font-size: 0.9em; }
+    .card p, .card ul { margin-top: 8px; font-size: 0.95em; color: #444; line-height: 1.6; }
+    .card ul { padding-left: 18px; }
+
+    .pub-item {
+      background: white; border-radius: 10px; padding: 16px 20px;
+      margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .pub-item .year-badge {
+      display: inline-block; background: #6c63ff; color: white;
+      font-size: 0.75em; padding: 2px 8px; border-radius: 10px; margin-bottom: 6px;
+    }
+    .pub-item p { font-size: 0.93em; color: #333; line-height: 1.6; }
+    .pub-item a { color: #6c63ff; font-size: 0.85em; }
+
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill-tag {
+      background: #6c63ff; color: white; padding: 6px 14px;
+      border-radius: 20px; font-size: 0.88em;
+    }
+
+    .award-item { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 14px; }
+    .award-icon { font-size: 1.5em; }
+    .award-item p { font-size: 0.93em; color: #444; line-height: 1.5; }
+
+    footer {
+      background: #1a1a2e; color: #aaa; text-align: center;
+      padding: 20px; font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mohamed Emam Mansour</h1>
+  <p>PhD Researcher · Bioinformatics · Graph Neural Networks · Multi-Omics</p>
+  <div class="contact-bar">
+    <a href="mailto:memam@nu.edu.eg">✉ memam@nu.edu.eg</a>
+    <a href="https://github.com/Mohamedema" target="_blank">⚙ GitHub</a>
+    <a href="https://scholar.google.com/citations?hl=en&user=EZHXi5QAAAAJ" target="_blank">📚 Google Scholar</a>
+    <span>📍 Rio Tinto, Porto, Portugal</span>
+    <span>📞 +351 939-134-253</span>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#publications">Publications</a>
+  <a href="#skills">Skills</a>
+  <a href="#awards">Awards</a>
+  <a href="#teaching">Teaching</a>
+</nav>
+
+<main>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p>
+        I am a PhD researcher at CIIMAR, University of Porto / IST, University of Lisbon,
+        working on graph-based neural network models for multi-omics data integration to
+        analyze large-scale cancer cell line datasets. My research sits at the intersection
+        of machine learning, bioinformatics, and computational oncology. I am funded by the
+        la Caixa Foundation (Inphinit Fellowship) and FCT (PhD Studentship 2025.01385.BD).
+      </p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+
+    <div class="card">
+      <div class="card-header">
+        <strong>Researcher — CIIMAR, University of Porto / IST, University of Lisbon</strong>
+        <span>Oct 2022 – Present · Portugal</span>
+      </div>
+      <ul>
+        <li>Developing a graph-based neural network model for multi-omics data integration.</li>
+        <li>Analyzing large-scale cancer cell line datasets.</li>
+        <li>Funded by FCT Studentship (2025.01385.BD) and la Caixa Foundation (LCF/BQ/D122/11940015).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <strong>Data Science Intern — German Cancer Research Center (DKFZ)</strong>
+        <span>Oct 2023 – Dec 2023 · Germany</span>
+      </div>
+      <ul>
+        <li>Statistical and computational analyses on clinical and molecular datasets.</li>
+        <li>Supported predictive model development for breast cancer patient stratification.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <strong>Bioinformatics Intern — Emory University</strong>
+        <span>Sep 2020 – Jul 2021 · USA</span>
+      </div>
+      <ul>
+        <li>Engineered pipelines for single-cell RNA data analysis for early disease detection.</li>
+        <li>Applied clustering, classification, and dimensionality reduction on genomics data.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <strong>Bioinformatics Research Analyst — Center of Informatics Science</strong>
+        <span>Aug 2019 – Jul 2021 · Egypt</span>
+      </div>
+      <p>ML-based evaluation for multi-source data integration, in collaboration with University of Rostock, Germany.</p>
+    </div>
+
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="card">
+      <div class="card-header">
+        <strong>PhD — Graph Neural Networks for Multi-Source Data Integration</strong>
+        <span>Oct 2022 – Ongoing</span>
+      </div>
+      <p>Faculty of Science, Porto University / IST, University of Lisbon · GPA: 18/20</p>
+      <p>La Caixa Foundation Inphinit Fellowship & FCT Grant</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <strong>MSc in Information Technology – Bioinformatics</strong>
+        <span>Aug 2019 – Jul 2021</span>
+      </div>
+      <p>Computer Science, Nile University, Egypt · GPA: 3.77/4.0</p>
+      <p>Full Master Fellowship (Al-Qalaa Scholarship) · Master thesis at Rostock University, Germany (DAAD Grant)</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <strong>BSc in Biotechnology – Bioinformatics & Evolutionary Biology</strong>
+        <span>Jul 2014 – Jan 2019</span>
+      </div>
+      <p>Cairo University, Egypt · GPA: 3.35/4.0</p>
+      <p>Graduation project via Erasmus Exchange Program, University of Porto (Feb–Jul 2018)</p>
+    </div>
+
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <div class="pub-item">
+      <span class="year-badge">2026 – In Preparation</span>
+      <p><strong>Mohamed Emam</strong>, Gonçalves, E., Monteiro, P.T., & Antunes, A. GID: Graph Integrated-omics using Dual-view for prediction of tissue specific interaction.</p>
+    </div>
+
+    <div class="pub-item">
+      <span class="year-badge">2026 – Submitted</span>
+      <p>Batista, I., Dias, C., ..., <strong>Mohamed Emam</strong>, et al. NK Cell Adoptive Transfer Suppresses Metastasis and Prolongs Survival in Pancreatic Cancer. <em>Submitted to Nature Cell Biology.</em></p>
+    </div>
+
+    <div class="pub-item">
+      <span class="year-badge">2025</span>
+      <p>Omran, M.M., <strong>Mohamed Emam</strong>, et al. Comparative analysis of statistical and deep learning-based multi-omics integration for breast cancer subtype classification. <em>Journal of Translational Medicine, 23(1).</em>
+      <br><a href="https://doi.org/10.1186/s12967-025-06662-5" target="_blank">DOI: 10.1186/s12967-025-06662-5</a></p>
+    </div>
+
+    <div class="pub-item">
+      <span class="year-badge">2024</span>
+      <p>Fadel, Y.M., Khaled, M., <strong>Mohamed Emam</strong>, et al. Positive Selection Shapes Breast Cancer Tumor Suppressor Genes. <em>Journal of Molecular Evolution, 93(1), 100–110.</em>
+      <br><a href="https://doi.org/10.1007/s00239-024-10222-8" target="_blank">DOI: 10.1007/s00239-024-10222-8</a></p>
+    </div>
+
+    <div class="pub-item">
+      <span class="year-badge">2024</span>
+      <p><strong>Mohamed Emam</strong>, Tarek, A., Soudy, M., et al. Comparative evaluation of multiomics integration tools for prediabetes. <em>Network Modeling Analysis in Health Informatics and Bioinformatics.</em>
+      <br><a href="https://doi.org/10.1007/s13721-024-00442-9" target="_blank">DOI: 10.1007/s13721-024-00442-9</a></p>
+    </div>
+
+    <div class="pub-item">
+      <span class="year-badge">2023</span>
+      <p>Elsherif, A.K., <strong>Mohamed Emam</strong>, et al. Integrated Analysis of Bulk and Single-Cell Transcriptomics in Cervical Cancer. <em>IEEE BIBE 2023.</em>
+      <br><a href="https://doi.org/10.1109/bibe60311.2023.00023" target="_blank">DOI: 10.1109/bibe60311.2023.00023</a></p>
+    </div>
+
+    <div class="pub-item">
+      <span class="year-badge">2023</span>
+      <p>Bhasin, S.S., Thomas, B.E., ..., <strong>Mohamed Emam</strong>, et al. Pediatric T-cell ALL blast signature defined by single cell transcriptomics. <em>Scientific Reports.</em>
+      <br><a href="https://doi.org/10.1038/s41598-023-39152-z" target="_blank">DOI: 10.1038/s41598-023-39152-z</a></p>
+    </div>
+
+    <div class="pub-item">
+      <span class="year-badge">2021</span>
+      <p><strong>Mohamed Emam</strong>. Positive selection as a key player for SARS-CoV-2 pathogenicity. <em>Virus Research, 302, 198472.</em>
+      <br><a href="https://doi.org/10.1016/j.virusres.2021.198472" target="_blank">DOI: 10.1016/j.virusres.2021.198472</a></p>
+    </div>
+
+    <div class="pub-item">
+      <span class="year-badge">2020</span>
+      <p><strong>Mohamed Emam</strong>, Machado, J.P., & Antunes, A. Evolutionary genomics of mammalian lung cancer genes. <em>Genomics, 112(6), 4722–4731.</em>
+      <br><a href="https://doi.org/10.1016/j.ygeno.2020.08.020" target="_blank">DOI: 10.1016/j.ygeno.2020.08.020</a></p>
+    </div>
+
+    <div class="pub-item">
+      <span class="year-badge">2020</span>
+      <p><strong>Mohamed Emam</strong>. Detection of Mammalian Coding Sequences Using Chaos Game Representation and Machine Learning. <em>IEEE BIBM 2020.</em>
+      <br><a href="https://doi.org/10.1109/bibm49941.2020.9313497" target="_blank">DOI: 10.1109/bibm49941.2020.9313497</a></p>
+    </div>
+
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Tools</h2>
+    <div class="skills-grid">
+      <span class="skill-tag">Graph Neural Networks</span>
+      <span class="skill-tag">Multi-Omics Integration</span>
+      <span class="skill-tag">Machine Learning</span>
+      <span class="skill-tag">Deep Learning</span>
+      <span class="skill-tag">Single-Cell RNA Analysis</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">R</span>
+      <span class="skill-tag">PyTorch</span>
+      <span class="skill-tag">Bioinformatics Pipelines</span>
+      <span class="skill-tag">Dimensionality Reduction</span>
+      <span class="skill-tag">Statistical Analysis</span>
+      <span class="skill-tag">Cancer Genomics</span>
+      <span class="skill-tag">Evolutionary Genomics</span>
+      <span class="skill-tag">NGS Data Analysis</span>
+      <span class="skill-tag">English (C1)</span>
+      <span class="skill-tag">Arabic (Native)</span>
+      <span class="skill-tag">Portuguese (A2)</span>
+    </div>
+  </section>
+
+  <section id="awards">
+    <h2>Certifications & Awards</h2>
+    <div class="award-item">
+      <div class="award-icon">🏆</div>
+      <p><strong>EMBL Travel Grant</strong> — Multi-omics Integration Course (2022), Heidelberg, Germany</p>
+    </div>
+    <div class="award-item">
+      <div class="award-icon">🎤</div>
+      <p><strong>Best Oral Presentation Award (2021)</strong> — Youth Empowerment in Science, Nile University, Egypt</p>
+    </div>
+    <div class="award-item">
+      <div class="award-icon">🎓</div>
+      <p><strong>Academic Excellence Scholarship / Tuition Fee Waiver (2019)</strong> — Cairo University, Egypt</p>
+    </div>
+    <div class="award-item">
+      <div class="award-icon">🧬</div>
+      <p><strong>Best Scientific Poster Award (2016)</strong> — Human Genome and Genetic Research Conference, National Research Center, Egypt</p>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching & Mentoring</h2>
+
+    <div class="card">
+      <div class="card-header">
+        <strong>Co-supervisor — MSc Thesis, University of Porto</strong>
+        <span>Dec 2024 – Jul 2025</span>
+      </div>
+      <p>Topic: Tracking positive selection for lung cancer genes.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <strong>Co-supervisor — BSc Graduation Project, University of Porto</strong>
+        <span>Jan 2024 – Jun 2024</span>
+      </div>
+      <p>Topic: Transcriptome analysis for COVID patients.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <strong>Invited Teaching Assistant — Bioinformatics Course, Helwan University</strong>
+        <span>Dec 2019 – Jun 2020 · Egypt</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <strong>NGS Course Instructor — EGCompBio (DAAD Funded)</strong>
+        <span>Nov 2019 – Present</span>
+      </div>
+      <p>Introduction to Next Generation Sequencing for Egyptian computational biology community.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <strong>YouTube Science Content Creator — "Concept" Channel</strong>
+        <span>Jul 2018 – Present</span>
+      </div>
+      <p>Tutorials on Bioinformatics, Genetics, and Biochemistry.</p>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Mohamed Emam Mansour · Rio Tinto, Porto, Portugal</p>
+  <p style="margin-top:6px;">
+    <a href="https://github.com/Mohamedema" style="color:#a8d8ea;">GitHub</a> ·
+    <a href="https://scholar.google.com/citations?hl=en&user=EZHXi5QAAAAJ" style="color:#a8d8ea;">Google Scholar</a>
+  </p>
+</footer>
+
+</body>
+</html>
