@@ -29,7 +29,7 @@
     nav ul {
       list-style: none;
       display: flex;
-      gap: 24px;
+      gap: 26px;
       flex-wrap: wrap;
     }
     nav ul a {
@@ -151,6 +151,14 @@
     .pub p { display: inline; font-size: 0.93em; color: #333; }
     .pub a { display: block; margin-top: 4px; font-size: 0.83em; color: #6c63ff; text-decoration: none; }
     .pub a:hover { text-decoration: underline; }
+    .pub-label {
+      font-size: 0.88em;
+      color: #888;
+      margin: 20px 0 6px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
 
     /* SKILLS */
     .tags { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -173,45 +181,6 @@
     }
     .award-item strong { font-size: 0.95em; }
     .award-item p { font-size: 0.88em; color: #666; margin-top: 2px; }
-
-    /* BLOG */
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 20px;
-    }
-    .blog-card {
-      background: #fafafa;
-      border-radius: 10px;
-      padding: 22px;
-      border: 1px solid #eee;
-      transition: box-shadow 0.2s;
-    }
-    .blog-card:hover { box-shadow: 0 4px 18px rgba(108,99,255,0.12); }
-    .blog-card .meta { font-size: 0.8em; color: #999; margin-bottom: 8px; }
-    .blog-card h3 { font-size: 1.05em; margin-bottom: 8px; }
-    .blog-card p { font-size: 0.9em; color: #555; }
-    .blog-card a {
-      display: inline-block;
-      margin-top: 12px;
-      font-size: 0.85em;
-      color: #6c63ff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    /* REFERENCE */
-    .ref-card {
-      background: #fafafa;
-      border-radius: 10px;
-      padding: 18px 22px;
-      margin-bottom: 12px;
-      border-left: 3px solid #6c63ff;
-    }
-    .ref-card strong { font-size: 0.97em; }
-    .ref-card p { font-size: 0.88em; color: #555; margin-top: 4px; }
-    .ref-card a { color: #6c63ff; text-decoration: none; }
-    .ref-card a:hover { text-decoration: underline; }
 
     /* LANGUAGES */
     .lang-grid { display: flex; gap: 16px; flex-wrap: wrap; }
@@ -239,7 +208,7 @@
     @media (max-width: 640px) {
       .hero { flex-direction: column; text-align: center; }
       .hero-links { justify-content: center; }
-      nav ul { gap: 12px; }
+      nav ul { gap: 14px; }
       nav { padding: 14px 20px; }
     }
   </style>
@@ -257,7 +226,6 @@
     <li><a href="#skills">Skills</a></li>
     <li><a href="#teaching">Teaching</a></li>
     <li><a href="#awards">Awards</a></li>
-    <li><a href="#blog">Blog</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -284,7 +252,7 @@
 
 <!-- EXPERIENCE -->
 <section id="experience">
-  <h2>Work Experience</h2>
+  <h2>Research Experience</h2>
 
   <div class="card">
     <div class="card-row">
@@ -306,7 +274,7 @@
       <span class="date">Oct 2023 – Dec 2023</span>
     </div>
     <ul>
-      <li>Conducted statistical and computational analyses on clinical and molecular datasets.</li>
+      <li>Statistical and computational analyses on clinical and molecular datasets.</li>
       <li>Supported development of predictive models for breast cancer patient stratification.</li>
     </ul>
   </div>
@@ -318,7 +286,7 @@
     </div>
     <ul>
       <li>Engineered pipelines for analysis of high-dimensional single-cell RNA data, contributing to early disease detection models.</li>
-      <li>Applied clustering, classification, and dimensionality reduction techniques on genomics and patient records.</li>
+      <li>Applied clustering, classification, and dimensionality reduction on genomics and patient records.</li>
     </ul>
   </div>
 
@@ -328,17 +296,7 @@
       <span class="date">Aug 2019 – Jul 2021</span>
     </div>
     <ul>
-      <li>Machine learning based evaluation for multi-source data integration project, in collaboration with University of Rostock, Germany.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <div class="card-row">
-      <strong>Account Manager — Nawah Scientific Company, Egypt</strong>
-      <span class="date">Jan 2019 – Aug 2019</span>
-    </div>
-    <ul>
-      <li>Leading the sales for ten Egyptian universities.</li>
+      <li>ML-based evaluation for multi-source data integration, in collaboration with University of Rostock, Germany.</li>
     </ul>
   </div>
 </section>
@@ -352,19 +310,17 @@
       <strong>PhD — Graph Neural Networks for Multi-Source Data Integration</strong>
       <span class="date">Oct 2022 – Ongoing</span>
     </div>
-    <p>Faculty of Science, Porto University / IST, University of Lisbon, Portugal</p>
-    <p>GPA: 18/20</p>
+    <p>Faculty of Science, Porto University / IST, University of Lisbon, Portugal · GPA: 18/20</p>
     <div class="funding">La Caixa Foundation Inphinit Fellowship & FCT Grant</div>
   </div>
 
   <div class="card">
     <div class="card-row">
-      <strong>Master of Science in Information Technology – Bioinformatics</strong>
+      <strong>MSc in Information Technology – Bioinformatics</strong>
       <span class="date">Aug 2019 – Jul 2021</span>
     </div>
     <p>Computer Science, Nile University, Egypt · GPA: 3.77/4.0</p>
-    <p>Full Master Fellowship from Al-Qalaa Scholarship.</p>
-    <p>Master thesis at Rostock University, Germany through DAAD Grant.</p>
+    <p>Full Master Fellowship from Al-Qalaa Scholarship · Master thesis at Rostock University, Germany (DAAD Grant).</p>
   </div>
 
   <div class="card">
@@ -373,7 +329,7 @@
       <span class="date">Jul 2014 – Jan 2019</span>
     </div>
     <p>Cairo University, Egypt · GPA: 3.35/4.0</p>
-    <p>Graduation project through Erasmus Exchange Program — Faculty of Science, University of Porto (Feb 2018 – Jul 2018).</p>
+    <p>Graduation project through Erasmus Exchange Program — Faculty of Science, University of Porto (Feb–Jul 2018).</p>
   </div>
 </section>
 
@@ -381,7 +337,7 @@
 <section id="publications">
   <h2>Publications</h2>
 
-  <p style="font-size:0.9em; color:#888; margin-bottom:16px;">Manuscripts Submitted & In Preparation</p>
+  <div class="pub-label">In Preparation & Submitted</div>
 
   <div class="pub">
     <span class="status">2026 · In Prep</span>
@@ -393,7 +349,7 @@
     <p>Batista, I., Dias, C., Almeida, S., Cargaleiro, J., <strong>Mohamed Emam</strong>, Simões, R.V., Mendes, N., Quintas, S.T., Lopes, D.B., Mourao, B., Cravo, M., Steketee, M., Kim, Y., Ylstra, B., Antunes, A., Machado, J.C., & Melo, S. NK Cell Adoptive Transfer Suppresses Metastasis and Prolongs Survival in Pancreatic Cancer. <em>Submitted to Nature Cell Biology.</em></p>
   </div>
 
-  <p style="font-size:0.9em; color:#888; margin: 20px 0 10px;">Published</p>
+  <div class="pub-label">Published</div>
 
   <div class="pub">
     <span class="year">2025</span>
@@ -502,7 +458,7 @@
 
   <div class="card">
     <div class="card-row">
-      <strong>NGS Course Instructor — EGCompBio, Egypt (DAAD Funded / GED-Permid)</strong>
+      <strong>NGS Course Instructor — EGCompBio, Egypt (DAAD Funded)</strong>
       <span class="date">Nov 2019 – Present</span>
     </div>
     <p>Introduction to Next Generation Sequencing through the Egyptian Computational Biology community.</p>
@@ -561,63 +517,11 @@
   </div>
 </section>
 
-<!-- REFERENCES -->
-<section id="references">
-  <h2>References</h2>
-
-  <div class="ref-card">
-    <strong>Prof. Agostinho Antunes</strong>
-    <p>Head of the Bioinformatics Research Group, CIIMAR, University of Porto, Portugal.</p>
-    <p>Email: <a href="mailto:aantunes@ciimar.up.pt">aantunes@ciimar.up.pt</a></p>
-  </div>
-
-  <div class="ref-card">
-    <strong>Prof. Emanuel Gonçalves</strong>
-    <p>Assistant Professor, Instituto Superior Técnico (IST), University of Lisbon. Integrated Researcher at INESC-ID, Portugal.</p>
-    <p>Email: <a href="mailto:emanuel.v.goncalves@tecnico.ulisboa.pt">emanuel.v.goncalves@tecnico.ulisboa.pt</a></p>
-  </div>
-
-  <div class="ref-card">
-    <strong>Prof. Pedro T. Monteiro</strong>
-    <p>Associate Professor, Instituto Superior Técnico (IST), University of Lisbon. Integrated Researcher at INESC-ID, Portugal.</p>
-    <p>Email: <a href="mailto:Pedro.Tiago.Monteiro@tecnico.ulisboa.pt">Pedro.Tiago.Monteiro@tecnico.ulisboa.pt</a></p>
-  </div>
-</section>
-
-<!-- BLOG -->
-<section id="blog">
-  <h2>Blog</h2>
-  <div class="blog-grid">
-
-    <div class="blog-card">
-      <div class="meta">May 2025 · Bioinformatics</div>
-      <h3>What is Multi-Omics Integration?</h3>
-      <p>A beginner-friendly introduction to combining genomics, transcriptomics, and proteomics data for deeper biological insight.</p>
-      <a href="#">Read more →</a>
-    </div>
-
-    <div class="blog-card">
-      <div class="meta">Feb 2025 · Machine Learning</div>
-      <h3>Graph Neural Networks in Biology</h3>
-      <p>How GNNs are revolutionising the way we model molecular interactions and predict cancer phenotypes.</p>
-      <a href="#">Read more →</a>
-    </div>
-
-    <div class="blog-card">
-      <div class="meta">Dec 2024 · Career</div>
-      <h3>PhD Life in Portugal</h3>
-      <p>Reflections on doing a PhD abroad, managing research, and building an international scientific network.</p>
-      <a href="#">Read more →</a>
-    </div>
-
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
   <div class="card">
-    <p>Av. dom João I, 484 Rio Tinto, Portugal 4435-208</p>
+    <p>Av. dom João I, 484 Rio Tinto, Porto, Portugal 4435-208</p>
     <p style="margin-top:6px;">
       Phone: <a href="tel:+351939134253" style="color:#6c63ff;">+351 939-134-253</a>
     </p>
